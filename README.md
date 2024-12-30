@@ -1,7 +1,7 @@
 # 3D Genome Organization
 <hr>
-quantification of various 3D sturctural properties of chromsomes to be used in a downstream process.
-
+Quantification of various 3D sturctural properties of chromsomes to be used in a downstream process.
+<br> <br>
 Details, code and data to be posted soon.
 STAY TUNED!!!
 
