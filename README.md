@@ -1,4 +1,5 @@
-# 3D_genome_organization
+# 3D Genome Organization
+<hr>
 quantification of various 3D sturctural properties of chromsomes to be used in a downstream process.
 
 Details, code and data to be posted soon.
