@@ -226,6 +226,8 @@ By the end of 4 weeks, you will have:
 
 ------
 
+<span style='color:red'> checkpoint 1 </span>
+
 ### STEP 6: Extract and Refactor Notebook Code
 
 **What to do:**
