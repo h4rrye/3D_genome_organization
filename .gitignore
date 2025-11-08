@@ -1,0 +1,582 @@
+# ignore the following files and folders
+
+# ============================================================================
+# CHROMOSOME SASA PIPELINE - .gitignore
+# ============================================================================
+# Purpose: Exclude generated files, large data, sensitive info, and temporary files
+# Note: Some exceptions are made for small examples and test data
+# ============================================================================
+
+# ============================================================================
+# PYTHON
+# ============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+docs/.doctrees/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# ============================================================================
+# DATA FILES (Large genomic data - DO NOT COMMIT)
+# ============================================================================
+
+# Raw input data (PDB files can be 100MB+)
+data/raw/*.pdb
+data/raw/*.cif
+data/raw/*.ent
+data/raw/*.gz
+data/raw/*.zip
+data/raw/*.tar
+data/raw/*.tar.gz
+
+# Processed intermediate data
+data/processed/
+data/processed/**/*
+
+# Keep directory structure
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# ============================================================================
+# RESULTS / OUTPUT FILES (User-generated - DO NOT COMMIT)
+# ============================================================================
+
+# All results directories
+results/
+results/**/*
+
+# Specific output file types
+*.html
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.svg
+
+# But ALLOW small examples and documentation
+!examples/sample_outputs/*.html
+!examples/sample_outputs/*.png
+!docs/images/*.png
+!docs/images/*.jpg
+!docs/**/*.png
+!docs/**/*.jpg
+!README_images/*.png
+
+# Keep directory structure
+!results/.gitkeep
+
+# ============================================================================
+# NEXTFLOW
+# ============================================================================
+
+# Nextflow work directory (can be GBs)
+work/
+work/**/*
+
+# Nextflow cache and logs
+.nextflow/
+.nextflow.log
+.nextflow.log.*
+
+# Nextflow history
+.nextflow/history
+
+# Nextflow timeline/trace/report (auto-generated)
+timeline.html
+trace.txt
+report.html
+dag.html
+*.html.* 
+
+# Nextflow temp files
+.command.*
+.exitcode
+
+# But ALLOW example reports in docs
+!docs/examples/*.html
+
+# ============================================================================
+# AWS / CLOUD
+# ============================================================================
+
+# AWS credentials (CRITICAL - never commit)
+.aws/
+*.pem
+*.key
+credentials
+config
+
+# AWS specific
+.aws-sam/
+
+# Terraform state files (if using IaC)
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# ============================================================================
+# DOCKER
+# ============================================================================
+
+# Docker build artifacts
+.docker/
+docker-compose.override.yml
+
+# ============================================================================
+# IDE / EDITOR
+# ============================================================================
+
+# Visual Studio Code
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+.history/
+*.vsix
+
+# Cursor (AI IDE)
+.cursor/
+.cursor-tutor/
+
+# PyCharm / IntelliJ
+.idea/
+.idea/*
+*.iws
+*.iml
+*.ipr
+out/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Kate
+.*.kate-swp
+.swp.*
+
+# ============================================================================
+# OPERATING SYSTEM
+# ============================================================================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Icon
+.DocumentRevisions-V100
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+.directory
+.Trash-*
+.nfs*
+
+# ============================================================================
+# LOGS AND TEMPORARY FILES
+# ============================================================================
+
+# General logs
+*.log
+logs/
+*.out
+*.err
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*~
+
+# Lock files
+*.lock
+package-lock.json
+yarn.lock
+
+# ============================================================================
+# BIOINFORMATICS SPECIFIC
+# ============================================================================
+
+# Large genomic files
+*.bam
+*.sam
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bed
+*.bedgraph
+*.wig
+*.bigwig
+*.bw
+*.vcf
+*.vcf.gz
+*.gff
+*.gff3
+*.gtf
+
+# Sequence databases
+*.fasta
+*.fa
+*.fna
+*.ffn
+*.faa
+*.frn
+
+# Keep small test data
+!tests/test_data/*.pdb
+!tests/test_data/*.fasta
+!tests/test_data/*.bed
+
+# ============================================================================
+# JUPYTER NOTEBOOKS
+# ============================================================================
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Jupyter output that should not be committed
+# (commented out if you want to commit notebook outputs for demos)
+# *.ipynb
+
+# JupyterLab settings
+.jupyter/
+
+# ============================================================================
+# TESTING
+# ============================================================================
+
+# Test outputs (keep test data, ignore test results)
+tests/test_outputs/
+tests/__pycache__/
+.pytest_cache/
+
+# Coverage reports
+.coverage
+htmlcov/
+coverage.xml
+
+# ============================================================================
+# DOCUMENTATION BUILD
+# ============================================================================
+
+# Sphinx
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# MkDocs
+site/
+
+# ============================================================================
+# PACKAGE MANAGEMENT
+# ============================================================================
+
+# Conda
+*.conda
+conda-bld/
+.conda/
+
+# Pip
+pip-wheel-metadata/
+
+# ============================================================================
+# CONTINUOUS INTEGRATION
+# ============================================================================
+
+# GitHub Actions artifacts
+.github/actions-runner/
+
+# CircleCI
+.circleci/
+
+# Travis CI
+.travis.yml~
+
+# ============================================================================
+# SECURITY / SENSITIVE DATA
+# ============================================================================
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# API keys and secrets
+secrets/
+secrets.json
+api_keys.txt
+*.secret
+
+# SSH keys
+id_rsa
+id_rsa.pub
+*.ppk
+
+# ============================================================================
+# PROJECT SPECIFIC
+# ============================================================================
+
+# Large intermediate files
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+
+# But ALLOW small test data
+!tests/test_data/*.npy
+!tests/test_data/*.pkl
+
+# Benchmark results
+benchmarks/
+*.benchmark
+
+# Profiling results
+*.prof
+*.lprof
+
+# Database files (if any)
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================================================
+# MISCELLANEOUS
+# ============================================================================
+
+# Compressed files (except examples)
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# Allow example compressed files
+!examples/**/*.zip
+!examples/**/*.tar.gz
+
+# Node modules (if any JavaScript tools)
+node_modules/
+
+# Ruby (if any Ruby tools)
+*.gem
+.bundle/
+vendor/
+
+# Archives
+*.dmg
+*.iso
+
+# ============================================================================
+# EXCEPTIONS (Files to KEEP despite above rules)
+# ============================================================================
+
+# Keep important empty directories
+!**/.gitkeep
+
+# Keep example outputs (small)
+!examples/sample_outputs/
+!examples/sample_outputs/**
+
+# Keep test data (small files only)
+!tests/test_data/
+!tests/test_data/**
+
+# Keep documentation images
+!docs/images/
+!docs/images/**
+
+# Keep README images
+!**/README_images/
+!**/README_images/**
+
+# ============================================================================
+# END OF .gitignore
+# ============================================================================

@@ -1,0 +1,129 @@
+3D_genome_organization/
+│
+├── 📄 README.md                          # Main project documentation
+├── 📄 LICENSE                            # MIT or Apache 2.0
+├── 📄 requirements.txt                   # Python dependencies
+├── 📄 environment.yml                    # Conda environment (optional)
+├── 📄 setup.py                           # Make package installable
+├── 📄 .gitignore                         # Git ignore rules
+├── 📄 nextflow.config                    # Main Nextflow configuration
+├── 📄 main.nf                            # Main Nextflow workflow
+│
+├── 📂 src/                               # All Python source code
+│   ├── 📄 __init__.py
+│   │
+│   ├── 📂 sasa_calculator/               # Core SASA algorithm
+│   │   ├── 📄 __init__.py
+│   │   ├── 📄 core.py                    # Main SASA classes (ChromosomeSASA)
+│   │   ├── 📄 geometry.py                # Sphere generation, voxelization
+│   │   ├── 📄 surface.py                 # Surface detection algorithms
+│   │   └── 📄 genomic_mapping.py         # Map SASA to genomic coordinates
+│   │
+│   ├── 📂 analysis/                      # Analysis and metrics
+│   │   ├── 📄 __init__.py
+│   │   ├── 📄 physical_properties.py     # Rg, asphericity, compactness
+│   │   ├── 📄 statistics.py              # Statistical analysis
+│   │   └── 📄 report_generator.py        # Generate text/HTML reports
+│   │
+│   └── 📂 visualization/                 # All plotting code
+│       ├── 📄 __init__.py
+│       ├── 📄 plots.py                   # Individual plot functions
+│       ├── 📄 dashboard.py               # Multi-panel dashboard
+│       └── 📄 themes.py                  # Plotly themes and styling
+│
+├── 📂 bin/                               # Executable CLI scripts
+│   ├── 📄 sasa-calculate                 # Main analysis script (no .py)
+│   ├── 📄 sasa-visualize                 # Visualization script
+│   ├── 📄 sasa-report                    # Report generation
+│   └── 📄 sasa-batch                     # Batch processing multiple files
+│
+├── 📂 workflows/                         # Nextflow workflows
+│   ├── 📄 sasa_analysis.nf               # Main SASA workflow
+│   └── 📄 batch_processing.nf            # Multi-chromosome workflow
+│
+├── 📂 modules/                           # Nextflow process modules
+│   ├── 📄 download_pdb.nf                # Download PDB files
+│   ├── 📄 calculate_sasa.nf              # Run SASA calculation
+│   ├── 📄 generate_viz.nf                # Create visualizations
+│   └── 📄 create_summary.nf              # Summary report
+│
+├── 📂 config/                            # Configuration files
+│   ├── 📄 base.config                    # Base Nextflow config
+│   ├── 📄 docker.config                  # Docker profile
+│   ├── 📄 aws.config                     # AWS Batch profile
+│   ├── 📄 test.config                    # Testing profile
+│   └── 📄 params.yaml                    # Default parameters
+│
+├── 📂 docker/                            # Docker files
+│   ├── 📄 Dockerfile                     # Main container definition
+│   ├── 📄 .dockerignore                  # Docker ignore rules
+│   └── 📄 docker-compose.yml             # Local testing (optional)
+│
+├── 📂 tests/                             # All test files
+│   ├── 📄 __init__.py
+│   ├── 📄 conftest.py                    # Pytest configuration
+│   ├── 📄 test_core.py                   # Test core SASA algorithm
+│   ├── 📄 test_geometry.py               # Test geometric functions
+│   ├── 📄 test_analysis.py               # Test analysis functions
+│   ├── 📄 test_visualization.py          # Test plotting
+│   ├── 📄 test_pipeline.py               # Integration tests
+│   └── 📂 test_data/                     # Small test files
+│       └── 📄 chr1_test_10beads.pdb      # Tiny PDB for testing
+│
+├── 📂 data/                              # Data directory (GITIGNORED)
+│   ├── 📄 .gitkeep                       # Keep empty dir in git
+│   ├── 📂 raw/                           # Raw input data
+│   │   ├── 📄 chr1.pdb
+│   │   ├── 📄 chr2.pdb
+│   │   └── 📄 ...
+│   └── 📂 processed/                     # Processed outputs
+│       └── 📄 .gitkeep
+│
+├── 📂 results/                           # Analysis outputs (GITIGNORED)
+│   ├── 📄 .gitkeep
+│   └── 📂 [auto-generated per run]
+│
+├── 📂 notebooks/                         # Jupyter notebooks
+│   ├── 📄 01_exploration.ipynb           # Original exploration notebook
+│   ├── 📄 02_algorithm_development.ipynb # Algorithm testing
+│   ├── 📄 03_visualization_demo.ipynb    # Visualization examples
+│   └── 📄 04_tutorial.ipynb              # User tutorial
+│
+├── 📂 docs/                              # Documentation
+│   ├── 📄 index.md                       # Documentation homepage
+│   ├── 📄 installation.md                # Installation guide
+│   ├── 📄 quickstart.md                  # Quick start guide
+│   ├── 📄 user_guide.md                  # Detailed user guide
+│   ├── 📄 api_reference.md               # API documentation
+│   ├── 📄 aws_deployment.md              # AWS deployment guide
+│   ├── 📄 contributing.md                # Contribution guidelines
+│   ├── 📂 images/                        # Documentation images
+│   │   ├── 📄 architecture.png
+│   │   ├── 📄 workflow_diagram.png
+│   │   └── 📄 example_output.png
+│   └── 📂 tutorials/                     # Step-by-step tutorials
+│       ├── 📄 basic_usage.md
+│       └── 📄 advanced_features.md
+│
+├── 📂 scripts/                           # Utility scripts
+│   ├── 📄 setup_environment.sh           # Setup script
+│   ├── 📄 setup_aws.sh                   # AWS infrastructure setup
+│   ├── 📄 run_tests.sh                   # Run all tests
+│   ├── 📄 build_docker.sh                # Build Docker image
+│   ├── 📄 deploy_aws.sh                  # Deploy to AWS
+│   └── 📄 clean_results.sh               # Clean output directories
+│
+├── 📂 .github/                           # GitHub specific
+│   ├── 📂 workflows/                     # CI/CD workflows
+│   │   ├── 📄 tests.yml                  # Run tests on push
+│   │   ├── 📄 docker-publish.yml         # Build/push Docker
+│   │   └── 📄 docs.yml                   # Build documentation
+│   ├── 📄 ISSUE_TEMPLATE.md              # Issue template
+│   └── 📄 PULL_REQUEST_TEMPLATE.md       # PR template
+│
+└── 📂 examples/                          # Example usage
+    ├── 📄 example_basic.sh               # Basic usage example
+    ├── 📄 example_batch.sh               # Batch processing
+    ├── 📄 example_aws.sh                 # AWS execution
+    └── 📂 sample_outputs/                # Example outputs
+        └── 📄 chr1_example_dashboard.html
