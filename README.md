@@ -1,4 +1,4 @@
-# 3D Genome Organization
+# Chromosome SASA Analysis Pipeline
 <hr>
 <h2> SCOPE OF THE PROJECT </h2>
 <h4>
@@ -12,6 +12,21 @@ The primary objective of this algorithm is to identify accessible regions of the
 The future scope of this project includes quantifying the physical properties of the genomic structure and integrating functional data, such as gene expression, histone modifications, and protein binding sites. By mapping these features onto the genomic structure, the project aims to uncover how physical properties influence genomic function and susceptibility. Additionally, this framework can be extended to study changes in the genomic architecture of cancerous cells, identifying underlying structural alterations alongside shifts in expression levels. This comprehensive approach will provide valuable insights into disease mechanisms, contributing to a deeper understanding of how structural and functional dynamics drive genomic vulnerabilities and potential therapeutic strategies.
 <br>
 <hr>
+
+
+## Development
+
+This project was developed with assistance from:
+- **AI-assisted coding**: Claude (Anthropic) and Kiro IDE for code generation, debugging, and documentation
+- **Human oversight**: All AI-generated code was reviewed, tested, and validated
+- **Original contributions**: Algorithm design, scientific methodology, and 
+  biological interpretation, project design, writing codes, writing and conducting analysis dashboard creation, visualization, and model testing was all done by me.
+
+### Reproducibility Note
+The final codebase is fully reproducible without AI tools. All dependencies are 
+specified in `requirements.txt` and the code follows standard Python/Nextflow 
+conventions.
+
 
 
 !['patiently waiting'](https://imgs.search.brave.com/mHYyOZA_2upBWHHCx4OhNYcMPiyXDk1bIcSkPgsSpfA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvai1j/b2xlLXJvb2Z0b3At/YXJ0LXB3a2g5N3du/NndtMnJxeWkuanBn)

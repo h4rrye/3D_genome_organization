@@ -1,0 +1,155 @@
+# ============================================================================
+# CHROMOSOME SASA PIPELINE - REQUIREMENTS
+# ============================================================================
+# Python 3.10+ required
+# Install: pip install -r requirements.txt
+# ============================================================================
+
+# ============================================================================
+# CORE SCIENTIFIC COMPUTING
+# ============================================================================
+
+numpy==1.24.2                    # Array operations, numerical computing
+scipy==1.15.0                    # Scientific algorithms (spatial, linalg, ndimage)
+pandas==2.0.3                    # Data manipulation, DataFrames
+
+# ============================================================================
+# BIOINFORMATICS
+# ============================================================================
+
+mdtraj==1.10.2                   # PDB file parsing, molecular structure analysis
+
+# ============================================================================
+# VISUALIZATION
+# ============================================================================
+
+plotly==5.24.1                   # Interactive 3D visualizations, dashboards
+kaleido==0.2.1                   # Static image export for Plotly (PNG, PDF, SVG)
+matplotlib>=3.7.0                # Additional plotting, compatibility
+seaborn>=0.12.0                  # Statistical visualizations
+
+# ============================================================================
+# PROGRESS & USER INTERFACE
+# ============================================================================
+
+tqdm==4.67.1                     # Progress bars for loops
+
+# ============================================================================
+# COMMAND-LINE INTERFACE
+# ============================================================================
+
+click>=8.1.0                     # Modern CLI creation (alternative to argparse)
+pyyaml>=6.0                      # YAML configuration file parsing
+
+# ============================================================================
+# DATA VALIDATION & TYPE CHECKING
+# ============================================================================
+
+pydantic>=2.0.0                  # Data validation, settings management
+typing-extensions>=4.5.0         # Extended type hints for Python <3.11
+
+# ============================================================================
+# LOGGING & MONITORING
+# ============================================================================
+
+loguru>=0.7.0                    # Better logging than standard library
+rich>=13.0.0                     # Rich text formatting, pretty printing in terminal
+
+# ============================================================================
+# CLOUD & AWS (for Week 3)
+# ============================================================================
+
+boto3>=1.28.0                    # AWS SDK for Python (S3, Batch, etc.)
+awscli>=1.29.0                   # AWS Command Line Interface
+
+# ============================================================================
+# TESTING (Development)
+# ============================================================================
+
+pytest>=7.4.0                    # Test framework
+pytest-cov>=4.1.0                # Test coverage reports
+pytest-xdist>=3.3.0              # Parallel test execution
+pytest-mock>=3.11.0              # Mocking for tests
+hypothesis>=6.82.0               # Property-based testing
+
+# ============================================================================
+# CODE QUALITY (Development)
+# ============================================================================
+
+black>=23.7.0                    # Code formatter
+flake8>=6.1.0                    # Linting, style checking
+pylint>=2.17.0                   # Additional linting
+mypy>=1.4.0                      # Static type checking
+isort>=5.12.0                    # Import sorting
+
+# ============================================================================
+# DOCUMENTATION (Development)
+# ============================================================================
+
+sphinx>=7.1.0                    # Documentation generation
+sphinx-rtd-theme>=1.3.0          # Read the Docs theme
+sphinx-autodoc-typehints>=1.24.0 # Type hints in docs
+myst-parser>=2.0.0               # Markdown support in Sphinx
+
+# ============================================================================
+# UTILITIES
+# ============================================================================
+
+requests>=2.31.0                 # HTTP requests (downloading PDB files)
+python-dotenv>=1.0.0             # Environment variable management
+jsonschema>=4.18.0               # JSON validation
+
+# ============================================================================
+# OPTIONAL: ENHANCED FEATURES
+# ============================================================================
+
+# Uncomment if needed:
+# scikit-learn>=1.3.0            # Machine learning (if adding ML features)
+# networkx>=3.1                  # Network analysis (chromatin networks)
+# biopython>=1.81                # Additional bioinformatics tools
+# h5py>=3.9.0                    # HDF5 file format support
+# tables>=3.8.0                  # PyTables for large data
+# joblib>=1.3.0                  # Parallel computing utilities
+# numba>=0.57.0                  # JIT compilation for speed
+
+# ============================================================================
+# DEVELOPMENT TOOLS (Optional)
+# ============================================================================
+
+# Uncomment for development:
+# ipython>=8.14.0                # Better Python REPL
+# jupyter>=1.0.0                 # Jupyter notebooks
+# jupyterlab>=4.0.0              # JupyterLab interface
+# notebook>=7.0.0                # Jupyter notebook
+# ipywidgets>=8.1.0              # Interactive widgets for notebooks
+# pre-commit>=3.3.0              # Git pre-commit hooks
+
+# ============================================================================
+# PACKAGE MANAGEMENT
+# ============================================================================
+
+setuptools>=68.0.0               # Package building
+wheel>=0.41.0                    # Wheel package format
+pip>=23.2.0                      # Package installer (keep updated)
+
+# ============================================================================
+# NOTES
+# ============================================================================
+# 
+# Installation:
+#   pip install -r requirements.txt
+#
+# Development installation (with testing/docs):
+#   pip install -r requirements.txt
+#   pip install -e .
+#
+# Production installation (minimal):
+#   pip install -r requirements-prod.txt
+#
+# To update all packages:
+#   pip install --upgrade -r requirements.txt
+#
+# To freeze exact versions:
+#   pip freeze > requirements-frozen.txt
+#
+# ============================================================================
