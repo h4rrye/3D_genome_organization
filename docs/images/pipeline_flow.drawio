@@ -1,0 +1,124 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.8 Chrome/140.0.7339.240 Electron/38.4.0 Safari/537.36" version="28.2.8">
+  <diagram id="yPxyJZ8AM_hMuL3Unpa9" name="complex gitflow">
+    <mxGraphModel dx="1702" dy="1349" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XGG6Iq__QROCV-celJXN-4" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="XGG6Iq__QROCV-celJXN-3" target="XGG6Iq__QROCV-celJXN-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XGG6Iq__QROCV-celJXN-3" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;Chromosome Surface Analysis&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillStyle=solid;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="90" y="360" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XGG6Iq__QROCV-celJXN-6" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="XGG6Iq__QROCV-celJXN-5" target="XGG6Iq__QROCV-celJXN-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XGG6Iq__QROCV-celJXN-8" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="XGG6Iq__QROCV-celJXN-5" target="XGG6Iq__QROCV-celJXN-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XGG6Iq__QROCV-celJXN-10" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.63;exitY=0.06;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;exitPerimeter=0;" edge="1" parent="1" source="XGG6Iq__QROCV-celJXN-5" target="XGG6Iq__QROCV-celJXN-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="330" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="560" y="275" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XGG6Iq__QROCV-celJXN-13" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="XGG6Iq__QROCV-celJXN-5" target="XGG6Iq__QROCV-celJXN-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="780" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XGG6Iq__QROCV-celJXN-5" value="3D Chromatin&lt;div&gt;Model&lt;/div&gt;" style="shape=ellipse;html=1;dashed=0;whiteSpace=wrap;perimeter=ellipsePerimeter;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
+          <mxGeometry x="420" y="360" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="XGG6Iq__QROCV-celJXN-19" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=95.605;exitDy=4.395000000000001;exitPerimeter=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="XGG6Iq__QROCV-celJXN-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="980" y="270" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="880" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XGG6Iq__QROCV-celJXN-7" value="Surface" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.start;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" vertex="1" parent="1">
+          <mxGeometry x="620" y="590" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XGG6Iq__QROCV-celJXN-18" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=84.8725;exitDy=5.127500000000001;exitPerimeter=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="XGG6Iq__QROCV-celJXN-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="930" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XGG6Iq__QROCV-celJXN-9" value="Physical&lt;div&gt;Attributes&lt;/div&gt;" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.start;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" vertex="1" parent="1">
+          <mxGeometry x="635" y="440" width="90" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="XGG6Iq__QROCV-celJXN-16" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="XGG6Iq__QROCV-celJXN-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="890" y="190" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="800" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XGG6Iq__QROCV-celJXN-11" value="Biological&lt;div&gt;Features&lt;/div&gt;" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.start;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" vertex="1" parent="1">
+          <mxGeometry x="635" y="185" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XGG6Iq__QROCV-celJXN-17" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=75.605;exitDy=4.395000000000001;exitPerimeter=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="XGG6Iq__QROCV-celJXN-14" target="XGG6Iq__QROCV-celJXN-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XGG6Iq__QROCV-celJXN-25" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="XGG6Iq__QROCV-celJXN-14" target="XGG6Iq__QROCV-celJXN-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XGG6Iq__QROCV-celJXN-14" value="network&lt;div&gt;properties&lt;/div&gt;" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.start;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
+          <mxGeometry x="660" y="310" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XGG6Iq__QROCV-celJXN-15" value="Dashboard" style="shape=ext;double=1;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" vertex="1" parent="1">
+          <mxGeometry x="900" y="185" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="XGG6Iq__QROCV-celJXN-21" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="XGG6Iq__QROCV-celJXN-20" target="XGG6Iq__QROCV-celJXN-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1070" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XGG6Iq__QROCV-celJXN-20" value="AWS" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="100" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XGG6Iq__QROCV-celJXN-22" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.996;exitY=0.137;exitDx=0;exitDy=0;entryX=0.076;entryY=0.696;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;exitPerimeter=0;" edge="1" parent="1" source="XGG6Iq__QROCV-celJXN-15" target="XGG6Iq__QROCV-celJXN-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1090" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XGG6Iq__QROCV-celJXN-30" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="XGG6Iq__QROCV-celJXN-23" target="XGG6Iq__QROCV-celJXN-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XGG6Iq__QROCV-celJXN-23" value="Nextflow&lt;div&gt;Pipeline&lt;/div&gt;" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#6d8764;fontColor=#ffffff;strokeColor=#3A5431;" vertex="1" parent="1">
+          <mxGeometry x="990" y="410" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="XGG6Iq__QROCV-celJXN-24" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.108;entryY=0.213;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="XGG6Iq__QROCV-celJXN-11" target="XGG6Iq__QROCV-celJXN-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XGG6Iq__QROCV-celJXN-26" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.029;entryY=0.829;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="XGG6Iq__QROCV-celJXN-9" target="XGG6Iq__QROCV-celJXN-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XGG6Iq__QROCV-celJXN-27" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.375;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="XGG6Iq__QROCV-celJXN-7" target="XGG6Iq__QROCV-celJXN-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XGG6Iq__QROCV-celJXN-29" value="Docker" style="shape=ext;double=1;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="385" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="XGG6Iq__QROCV-celJXN-31" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.576;entryY=0.968;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="XGG6Iq__QROCV-celJXN-29" target="XGG6Iq__QROCV-celJXN-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
