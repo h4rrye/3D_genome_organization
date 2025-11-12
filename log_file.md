@@ -14,11 +14,20 @@ November 8th, 2025
 
    <span style='color:steelblue'>checkpoint</span>
 
-   try:
+   ____
 
-   	- creating class functions for the algorithm
-   	- Optimize surface bin data structure
-   	- Research useful physical attributes
-   	- calculate those attributes
+November 11th, 2025
 
-   
+1. created a new python notebook for graph/network analysis. 
+   1. calculated COM, rolling mean and distance from it
+2. Created Biological Function notebook.
+   1. GC Content, 
+      1. got the FASTA file from refSeq for hg38 chr1(https://www.ncbi.nlm.nih.gov/nuccore/CM000663.2?report=fasta)
+3. All three notebooks create a numpy ndarray for coords and corresponding feature columns. This will get fed into the final notebook for plots and dashboard
+
+
+
+
+
+
+
